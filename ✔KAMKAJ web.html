@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>✔KAMKAJ</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.nav{
+			width: 100%;
+			height: 5rem;
+			background-color: whitesmoke;
+		}
+		.nav h1{
+			margin-left: 13rem;
+			font-size: 2.5rem;
+		}
+		.writing .span,
+		.nav h1 span{
+			color: #f54505;
+		}
+		.nav p{
+			margin-left: 13.5rem;
+			font-size: 1rem;
+			margin-top: -10px;
+		}
+		.nav ul{
+			margin-left: 58rem;
+			margin-top: -2.5rem;
+			font-size: 1.1rem;
+		} 
+		.nav li{
+			display: inline-block;
+			margin-left: 0.7rem;
+
+		}
+		.nav a{
+			text-decoration: none;
+			color: black;
+		}
+		.nav i{
+			width: 2.5rem;
+			text-align: center;
+			line-height: 2.5rem;
+			color: whitesmoke;
+			border-radius: 50px;
+			background-color: #f54505;
+		}
+		.first{
+			width: 100%;
+			height: 55vh;
+			background-color: wheat;
+		}
+		.f1{
+			width: 62%;
+			height: 55vh;
+			background-color: whitesmoke;
+			float: left;
+		}
+		.f2{
+			float: right;
+			width: 38%;
+			height: 55vh;
+			background-color: whitesmoke;
+		}
+		.f1 .writing{
+			width: 45rem;
+			padding-left: 12rem;
+			padding-top: 6rem;
+			font-size: 1.5rem;
+		}
+		.f1 .writing p{
+			font-size: 18px;
+			width: 800px;
+			color: #434a45;
+		}
+		.writing span{
+			color: #757d77;
+		}
+		.writing select{
+			margin-top: 20px;
+			height: 3rem;
+			width: 8rem;
+			border-radius: 5px;
+			border: none;
+		}
+		.writing input{
+			height: 3rem;
+			width: 30rem;
+			border: none;
+		}
+		.writing i{
+			position: relative;
+			right: 2.5rem;
+			color: gray;
+		}
+		.writing a{
+			font-size: 20px;
+
+		}
+		.f2 .form{
+			width: 60%;
+			height: 53vh;
+			background-color: black;
+			border-radius: 20px;
+		}
+		.f2 .form h1{
+			color: white;
+			text-align: center;
+			padding-top: 30px;
+		}
+		.f2 .form .name{
+			width: 19rem;
+			margin-left: 1.5rem;
+			height: 2rem;
+			border: none;
+			margin-top: 0.9rem;
+			border-radius: 5px;
+			padding-left: 10px;
+		}
+		.f2 .form i{
+			position: relative;
+			bottom: 2rem;
+			left: 19.2rem;
+			width: 2rem;
+			padding-top: 10px;
+			height: 1.4rem;
+			text-align: center;
+			background-color: gray;
+			color: white;
+			cursor: pointer;
+			border-radius: 0px 5px 5px 0px;
+		}
+		.f2 .form .usama{
+			position: relative;
+			bottom: 30px;
+			width: 19rem;
+			height: 2rem;
+		}
+		.form h3{
+			width: 19rem;
+			height: 2rem;
+			text-align: center;
+			padding-top: 15px;
+			background-color: #f54505;
+			margin-left: 1.5rem;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.form a{
+			text-decoration: none;
+			color: white;
+		}
+		.service{
+			width: 100%;
+			height: 16rem;
+			background-color: whitesmoke;
+		}
+		.service h1{
+			text-align: center;
+		}
+		.service p{
+			text-align: center;
+			font-size: 20px;
+			color: #757d77;
+		}
+		.service .s1{
+			width: 11.5rem;
+			height: 135px;
+			margin-top: 50px;
+			background-color: ;
+			border: 2px solid black;
+			border-radius: 10px;
+			margin-left: 12.5%;
+			position: absolute;
+		}
+		.service .s2{
+			position: relative;
+			width: 11.5rem;
+			height: 135px;
+			background-color: ;
+			border: 2px solid black;
+			margin-left: 24.5%;
+			border-radius: 10px;
+			margin-top: 30px;
+			bottom: 20px;
+			position: absolute;
+		}
+		.service .s3{
+			position: relative;
+			left: 36.5%;
+			margin-top: 50px;
+			width: 11.5rem;
+			height: 135px;
+			background-color: ;
+			border: 2px solid black;
+			border-radius: 10px;
+			position: absolute;
+		}
+		.service .s4{
+			position: relative;
+			left: 48.5%;
+			margin-top: 50px;
+			width: 11.5rem;
+			height: 135px;
+			background-color: ;
+			border: 2px solid black;
+			border-radius: 10px;
+			position: absolute;
+		}
+		.service .s5{
+			position: relative;
+			margin-left: 60.5%;
+			margin-top: 50px;
+			width: 11.5rem;
+			height: 135px;
+			background-color: ;
+			border: 2px solid black;
+			border-radius: 10px;
+			position: absolute;
+		}
+		.service .s6{
+			position: relative;
+			margin-left: 72.5%;
+			margin-top: 50px;
+			width: 11.5rem;
+			height: 135px;
+			background-color: ;
+			border: 2px solid black;
+			border-radius: 10px;
+		}
+		.service img{
+			width: 50px;
+			height: 50px;
+			margin-left: 40%;
+			margin-top: 20px;
+		}
+		.service h5{
+			font-family: revert-layer;
+			font-weight: 100;
+			text-align: center;
+			font-size: 22px;
+			text-transform: capitalize;
+		}
+		.service .hover:hover{
+			background-color: #e6e8eb;
+			cursor: pointer;
+		}
+		.third{
+			width: 100%;
+			height: 100vh;
+			background-color: whitesmoke;
+/*			background-image: url("img/six-task-seven.png");*/
+/*			background-repeat: no-repeat;*/
+			text-align: center;
+		}
+		.third h1{
+			font-size: 37px;
+			font-weight: 600;
+		}
+		.third h5{
+			font-size: 30px;
+			font-weight: 100;
+		}
+		.third .th1{
+			border-radius: 10px;
+			margin-left: 12%;
+			width: 272px;
+			height: 350px;
+			background-color: gray;
+			background-image: url("img/six-task-seven1.png");
+			background-repeat: no-repeat;
+			background-size: 272px 350px;
+		}
+		.third .th1 h2{
+			padding-top: 50%;
+			color: white;
+			font-size: 40px;
+		}
+		.third .th1 h2:hover{
+			font-size: 25px;
+			transform: translateY(-100px);
+			transition: 1.5s ease;
+		}
+		.third .th1 h4{
+			display: none;
+		}
+		.third .th1 h4:hover{
+			display: inline-flex;
+			transform: translateY(-100px);
+			transition: 1.5s ease;			
+		}
+		.third .th1 h3{
+			width: 250px;
+			height: 40px;
+			border-radius: 10px;
+			padding-top: 15px;
+			background-color: black;
+			margin: auto;
+			margin-top: 30px;
+			position: sticky;
+			cursor: pointer;
+		}
+		.third .th1 h3:hover{
+			background-color: orange;
+			transition: 0.5s ease;
+		}
+		.third .th1 a{
+			text-decoration: none;
+			font-size: 20px;
+			color: white;
+		}
+		.third .th2{
+/*			background-image: url();*/
+			position: relative;
+			bottom: 330px;
+			margin-left: 30%;
+/*			position: absolute;*/
+		}
+		.third .th3{
+			position: relative;
+			bottom: 700px;
+			margin-left: 48%;
+		}
+		.third .th4{
+			position: relative;
+			bottom: 1030px;
+			margin-left: 66%;
+		}
+		.third .th5{
+			position: relative;
+			bottom: 1030px;
+			margin-left: 12%;
+		}
+		.third .th6{
+			position: relative;
+			bottom: 1360px;
+			margin-left: 30%;
+		}
+		.third .th7{
+			position: relative;
+			bottom: 1730px;
+			margin-left: 48%;
+		}
+		.third .th8{
+			position: relative;
+			bottom: 2060px;
+			margin-left: 66%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="nav">
+			<nav>
+				<h1><span>Kam</span>Kaj</h1>
+				<p>Making Live Eisier</p>
+				<ul>
+					<li><a href="#">Why KamKaj</a></li>
+					<li><a href="#">Track My Order</a></li>
+					<li><a href="#">Work With US</a></li>
+					<li><a href=""><i class="fa-solid fa-phone"></i></a></li>
+				</ul>
+			</nav>
+<!-- nav--></div>
+		<div class="first">
+			<div class="f1">
+				<div class="writing">
+					<h1><span class="span">Skilled Professional</span> At Your Doorstep.</h1>
+					<p><span>Kam Kaj is a leading multiple service provider company catering to your 360 needs with quality guaranteed.</span>
+						The aim and priority of Kam Kaj are to add value to our consumers' lives by providing smart solutions to all their problems. Our pride is providing the most extensive range of services. From home maintenance to personal assistance. We make sure that your safety is never compromised. This is why we hire all the staff under the roof of Kam Kaj, just for your satisfaction.</p>
+					<select size="1">
+						<option>Karachi</option>
+						<option>Lahore</option>
+						<input type="search" name="Chose a type of service" placeholder="Chose a type of service">
+						<a href="#"><i class="fa-solid fa-search"></i></a>
+					</select>	
+<!-- writing--></div>
+
+<!-- f1--></div>
+<!-- ..................................................f1 complete...................................................... -->
+			<div class="f2">
+				<div class="form">
+					<h1>Book Your Service</h1>
+					<input type="name" name="name" placeholder="Name" class="name">
+					<input type="" name="" placeholder="select service" class="name">
+					<i class="fa-solid fa-caret-down"></i>
+					<input type="" name="number" placeholder="03XXXXXXXXX" class="name usama">
+					<select size="1" class="name usama" style="width: 19.5rem;">
+						<option>select city</option>
+						<option>Karachi</option>
+						<option>Lahore</option>
+					</select>
+					<input type="" name="" placeholder="Address" class="name usama">
+					<h3><a href="#">Request a Call</a></h3>
+				</div>
+			</div>
+<!-- first--></div>
+	<div class="service">
+		<h1>Our Top Service</h1>
+		<p>Kam Kaj provides ultimate installations, repairs, maintenance, and grooming services at your doorstep.</p>
+		<div class="s1 hover">
+			<img src="img/six-task-first.png">
+			<h5>Home appliance repair</h5>
+		</div>
+		<div class="s2 hover">
+			<img src="img/six-task-second.png">
+			<h5>salon at home</h5>
+		</div>
+		<div class="s3 hover">
+			<img src="img/six-task-third.png">
+			<h5>cleaning service</h5>
+		</div>
+		<div class="s4 hover">
+			<img src="img/six-task-four.png">
+			<h5> electrical service</h5>
+		</div>
+		<div class="s5 hover">
+			<img src="img/six-task-five.png">
+			<h5>plumbing service</h5>
+		</div>
+		<div class="s6 hover">
+			<img src="img/six-task-six.png">
+			<h5>post control service</h5>
+		</div>
+<!-- service--></div>
+
+		<div class="third">
+			<h1>Recommended Services</h1>
+			<h5>Services highly recommended by our valuable customers.</h5>
+
+			<div class="th1">
+				<h2>AC Install and Repair Service</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<h3><a href="#">Book Now</a></h3>
+			</div>
+
+			<div class="th1 th2">
+				<h2>AC Install and Repair Service</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<h3><a href="#">Book Now</a></h3>
+			</div>
+
+			<div class="th1 th3">
+				<h2>AC Install and Repair Service</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<h3><a href="#">Book Now</a></h3>
+			</div>
+
+			<div class="th1 th4">
+				<h2>AC Install and Repair Service</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<h3><a href="#">Book Now</a></h3>
+			</div>
+			<div class="th1 th5">
+				<h2>AC Install and Repair Service</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<h3><a href="#">Book Now</a></h3>
+			</div>
+			<div class="th1 th6">
+				<h2>AC Install and Repair Service</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<h3><a href="#">Book Now</a></h3>
+			</div>
+			<div class="th1 th7">
+				<h2>AC Install and Repair Service</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<h3><a href="#">Book Now</a></h3>
+			</div>
+			<div class="th1 th8">
+				<h2>AC Install and Repair Service</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<h3><a href="#">Book Now</a></h3>
+			</div>
+		</div>
+<!-- container--></div>
+</body>
+</html>
